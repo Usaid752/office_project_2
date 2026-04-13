@@ -1,11 +1,11 @@
-import HeroSection from "@/components/HomePage/HeroSection";
-import DigitalEmpireSection from "@/components/HomePage/DigitalEmpireSection";
-import NewsHighlightsSection from "@/components/HomePage/NewsHighlightsSection";
-import WhyDukaandarSection from "@/components/HomePage/WhyDukaandarSection";
-import HowItsWork from "@/components/HomePage/HowitsWork";
-import Features from "@/components/HomePage/Features";
-import WhyChooseUs from "@/components/HomePage/WhyChooseUs";
-import FaqSection from "@/components/HomePage/FaqSection";
+import HeroSection from "./_components/HeroSection";
+import DigitalEmpireSection from "./_components/DigitalEmpireSection";
+import NewsHighlightsSection from "./_components/NewsHighlightsSection";
+import WhyDukaandarSection from "./_components/WhyDukaandarSection";
+import HowItsWork from "./_components/HowitsWork";
+import Features from "./_components/Features";
+import WhyChooseUs from "./_components/WhyChooseUs";
+import FaqSection from "./_components/FaqSection";
 
 export default function HomePage() {
   return (
