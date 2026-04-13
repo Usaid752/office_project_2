@@ -3,3 +3,4 @@ export const PLATFORM_STATS = [
   { label: "Active digital stores", value: "2,500+" },
   { label: "Monthly transactions", value: "10M+" },
 ] as const;
+

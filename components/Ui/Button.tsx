@@ -18,10 +18,23 @@ const variantStyles = {
     base: "!h-11 !rounded-xl !border-transparent !bg-transparent !px-4 !py-0 text-sm !font-medium !text-[#7A7A76] hover:!bg-white sm:!px-5",
     iconContainer: "bg-white",
   },
+  tabToggleActive: {
+    base: "!h-11 !rounded-xl !bg-[#A4DE02] !px-4 !py-0 text-sm !text-black shadow-[0_8px_20px_rgba(91,170,55,0.28)]  sm:!px-5",
+    iconContainer: "bg-[#A4DE02]",
+  },
+  tabToggleInactive: {
+    base: "!h-11 !rounded-xl !border-transparent !bg-transparent !px-4 !py-0 text-sm !font-medium !text-[#000000] hover:!bg-white sm:!px-5",
+    iconContainer: "bg-white",
+  },
 } as const;
 
 type ButtonProps = {
-  variant?: "filled" | "outlined" | "tabActive" | "tabInactive";
+  variant?:
+    | "filled"
+    | "outlined"
+    | "tabActive"
+    | "tabInactive"
+    | "tabToggleActive";
   icon?: ReactNode;
   children: ReactNode;
   className?: string;

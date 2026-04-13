@@ -3,10 +3,8 @@ import ArrowIcon from "@/components/Icons/ArrowIcon";
 import SubmitWaitlistButton from "@/components/Ui/SubmitWaitlistButton";
 
 const bgLayers = [
-  "linear-gradient(to bottom left, rgba(255, 255, 255, 0.19), transparent 45%)",
-  "linear-gradient(to top right, rgba(255, 255, 255, 0.04), transparent 45%)",
-  "linear-gradient(rgba(0, 0, 0, 0.84), rgb(0, 0, 0))",
-  "url(/img/Eclipse.jpg)  ",
+  
+  "url(/img/Hero.png)  ",
 ].join(", ");
 
 export default function HeroSection() {

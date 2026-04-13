@@ -18,8 +18,6 @@ const socialLinks = [
 export default function HeroSection() {
   return (
     <section className="overflow-hidden bg-white pb-50">
-    
-
       <div className="mx-auto flex flex-col items-center justify-center gap-10 px-6 sm:px-8 lg:flex-row lg:items-start lg:gap-6 lg:px-12">
         <div className="flex w-full flex-col items-center pt-0 text-center font-semibold lg:w-[70%] lg:items-start lg:pt-25 lg:text-left
         ">

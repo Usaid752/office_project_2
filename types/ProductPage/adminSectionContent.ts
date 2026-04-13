@@ -11,6 +11,7 @@ export const ADMIN_FEATURES = [
     title: "At-a-glance Sales",
     description:
       "See exactly how much you've sold today, this week, or this month.",
+    iconSrc: "/icons/Glance.svg",
     iconStyle: "green" as const,
   },
   {
@@ -18,6 +19,7 @@ export const ADMIN_FEATURES = [
     title: "Order Management",
     description:
       "Track orders from 'Pending' to 'Delivered' with a single swipe.",
+    iconSrc: "/icons/Order.svg",
     iconStyle: "lime" as const,
   },
   {
@@ -25,6 +27,7 @@ export const ADMIN_FEATURES = [
     title: "Inventory Health",
     description:
       "A quick view of your top-selling products and what's running low.",
+    iconSrc: "/icons/Health.svg",
     iconStyle: "green" as const,
   },
   {
@@ -32,6 +35,7 @@ export const ADMIN_FEATURES = [
     title: "Revenue Insights",
     description:
       "Understand your profit margins after shipping and discounts.",
-    iconStyle: "dark" as const,
+    iconSrc: "/icons/Revenue.svg",
+    iconStyle: "green" as const,
   },
 ] as const;
