@@ -46,7 +46,7 @@ export default function HowItsWork() {
       <div className="mx-auto grid max-w-[1800px] items-stretch gap-4 lg:grid-cols-[minmax(0,410px)_minmax(0,1fr)] xl:gap-5  ">
         <div className="relative  overflow-hidden rounded-[28px]  ">
           <Image
-            src="/src/shop_1.jpg"
+            src="/img/shop_1.jpg"
             alt="Dukaandar storefront preview on a laptop with shopping bags around it"
             fill
             sizes="w-full h-full"
