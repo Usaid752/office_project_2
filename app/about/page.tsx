@@ -1,7 +1,8 @@
 import AboutHero from "@/components/AboutPage/AboutHero";
 import AboutStory from "@/components/AboutPage/AboutStory";
 import Ourjourney from "@/components/AboutPage/Ourjourney";
-
+import AboutCards from "@/components/AboutPage/AboutCards";
+import OurSuccess from "@/components/AboutPage/OurSuccess";
 
 export default function AboutPage() {
   return (
@@ -9,6 +10,8 @@ export default function AboutPage() {
       <AboutHero />
       <AboutStory />
       <Ourjourney />
+      <AboutCards />
+      <OurSuccess />
     </main>
   );
 }
