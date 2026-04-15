@@ -4,22 +4,23 @@ import { SubmitWaitButton } from "@/components/Ui/SubmitWaitButton";
 
 export default function DigitalEmpireSection() {
   return (
-    <section className="bg-white px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+    <section className="bg-white  sm:px-6 sm:py-1 lg:px-8 lg:py-2">
       <div className="mx-auto max-w-[1800px] space-y-10 lg:space-y-16">
         <article className="grid items-center gap-6 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]">
-          <div className="pr-15 scale-[0.9] mb-40">
+          <div className="pr-15 ml-42 pb-15  mb-10 scale-[1.1]">
             <Image
               src="/img/image_2.svg"
               alt="Dukaandar storefront and dashboard preview"
               className="h-auto w-full "
               sizes="(max-width: 1024px) 100vw, 42vw"
-              width={500}
-              height={500}
+              width={0}
+              height={0}
+              style={{ width: '546px', height: '497px' }}
             />
           </div>
 
-          <div className="rounded-[32px] bg-black px-6 py-8 text-white sm:px-8 sm:py-10 lg:px-10 scale-[1.3] mr-20">
-            <p className="max-w-[25ch] text-4xl font-semibold  tracking-[-0.04em] sm:text-4xl lg:text-[52px] lg:leading-[0.95]">
+          <div className="rounded-[32px] w-[700px]  bg-black px-6 py-8 text-white sm:px-8 sm:py-10 lg:px-10 scale-[1.3] mr-20">
+            <p className="max-w-[25ch] text-4xl font-semibold  tracking-[-0.04em] sm:text-4xl lg:text-[52px] lg:leading-[0.95] font-custom ">
               Let&apos;s Build Your{" "}
               <span className="text-[#76BA1B]">Digital Empire!</span>
             </p>
@@ -39,7 +40,7 @@ export default function DigitalEmpireSection() {
             <Image
               src="/img/Frame_1.svg"
               alt="Dukaandar operating system dashboard"
-              width={894}
+              width={500}
               height={422}
               className="h-auto w-full rounded-[24px] scale-[0.9] "
               sizes="(max-width: 1024px) 100vw, 54vw"

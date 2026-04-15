@@ -96,13 +96,13 @@ export default function WhyDukaandarSection() {
         <div className="mx-auto max-w-[1600px] px-6 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-[150px_minmax(0,430px)_minmax(0,1fr)] lg:items-start xl:gap-16">
             <div className="flex flex-col gap-8  ">
-              <p className="text-[25px] font-[55]  uppercase leading-[1.15] tracking-[-0.02em] text-[#4C9A2A] mb-10 ">
+              <p className="text-[25px] font-[55]  uppercase leading-[1.15] tracking-[-0.02em] text-[#4C9A2A] mb-10 lg:ml-10 font-custom ">
                 Why
                 <br />
                 Dukaandar?
               </p>
 
-              <div className="relative w-full max-w-[270px] overflow-hidden rounded-[15px] sm:max-w-[200%] mt-55 ml-10 scale-[1.5] mr-25">
+              <div className="relative w-full max-w-[270px] overflow-hidden rounded-[15px] sm:max-w-[200%] mt-55 ml-17 scale-[1.5] mr-20 lg:mr-0 ">
                 <Image
                   src={FeatureImage}
                   alt="A shopper browsing an online store"
@@ -119,17 +119,17 @@ export default function WhyDukaandarSection() {
             </div>
 
             <div className="ml-30  ">
-              <h2 className="font-[550] text-3xl  leading-[1.02] scale-[1.5] ml-15 mt-10 ">
+              <h2 className="font-[550] text-[3rem]  leading-[1.02]  ml-10 mt-10 w-[500px] font-custom ">
                 Built for Modern Merchants
               </h2>
 
-              <p className="mt-10 text-[17px]  leading-[1.5] tracking-[-0.02em] ">
+              <p className="mt-10 text-[17px] text-[#575757] ml-10  leading-[1.5] tracking-[-0.02em] w-[320px] font-custom ">
                 Whether you&apos;re selling fashion, electronics, groceries, or
                 handmade products - Dukaandar gives you everything you need in
                 one powerful platform.
               </p>
 
-              <ul className="mt-7 space-y-3 text-sm font-medium sm:text-[15px]">
+              <ul className="mt-7 space-y-3 text-sm font-medium sm:text-[15px] ml-10 text-[#575757] font-custom ">
                 {featureItems.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckIcon />
@@ -138,11 +138,11 @@ export default function WhyDukaandarSection() {
                 ))}
               </ul>
 
-              <SubmitWaitlistButton className="mt-15" />
+              <SubmitWaitlistButton className="mt-15 ml-10 scale-[1.2]" />
             </div>
 
             <div className="relative mx-auto mt-15 w-full max-w-[460px] lg:pt-14 xl:w-[450px]">
-              <div className="aspect-[1.06] overflow-hidden rounded-[2px] sm:rounded-[50px] scale-[1.1] h-[350px] w-[550px] mt-15">
+              <div className="aspect-[1.06] overflow-hidden rounded-[2px] sm:rounded-[50px] scale-[1.2] pl-10 h-[350px] w-[510px] mt-15">
                 <Image
                   src="/img/Image.svg"
                   alt="Modern clothing store interior"

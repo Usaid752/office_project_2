@@ -19,21 +19,21 @@ export default function HeroSection() {
   return (
     <section className="overflow-hidden bg-white pb-50">
       <div className="mx-auto flex flex-col items-center justify-center gap-10 px-6 sm:px-8 lg:flex-row lg:items-start lg:gap-6 lg:px-12">
-        <div className="flex w-full flex-col items-center pt-0 text-center font-semibold lg:w-[70%] lg:items-start lg:pt-25 lg:text-left
+        <div className="flex w-[100%] ml-38 flex-col items-center pt-0 text-center font-semibold sm:w-[50%] md:w-[60%] lg:w-[70%] lg:items-start lg:pt-25 lg:text-left
         ">
-          <p className="mb-4 text-sm font-bold uppercase tracking-[0.15em] text-[#4C9A2A] sm:text-base mt-20">
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.15em] text-[#4C9A2A] sm:text-base mt-20 font-custom">
             Build. Sell. Grow with Dukaandar.
           </p>
 
-          <h1 className="mb-5 text-4xl font-[1000] text-foreground sm:text-5xl lg:text-[55px] lg:leading-[1] tracking-tight  ">
+          <h1 className="mb-5 text-xl font-[1000] text-foreground sm:text-[1.5rem] md:text-[2.5rem] lg:text-[5rem] lg:leading-[1] tracking-tight font-custom ">
             Powering the
             <br />
-            Future of <span className="text-[#4C9A2A]">Online</span>
+            Future of <span className="text-[#4C9A2A] font-custom">Online</span>
             <br />
-            <span className="text-[#4C9A2A]">Commerce</span>
+            <span className="text-[#4C9A2A] font-custom">Commerce</span>
           </h1>
 
-          <p className="mb-8 max-w-[450px] text-sm leading-relaxed text-black/65 sm:text-base font-light ">
+          <p className="mb-8 max-w-[450px] text-sm leading-relaxed text-black/65 sm:text-base lg:text-[1.1rem] font-light font-custom ">
             Dukaandar helps you build, manage, and grow your online business
             &nbsp;&mdash; without coding, without complexity.
           </p>
@@ -42,12 +42,12 @@ export default function HeroSection() {
             variant="filled"
             href="/waitlist"
             icon={<ArrowIcon />}
-            className="mb-10 w-fit shrink-0 whitespace-nowrap scale-[1.2] ml-6 mt-7 "
+            className="mb-10 w-fit shrink-0 whitespace-nowrap scale-[1.3] ml-6 mt-3 "
           >
             Submit a Waitlist
           </Button>
 
-          <div className="flex items-center gap-3 mt-15">
+          <div className="flex items-center gap-3 mt-7">
             {socialLinks.map((link) => (
               <IconButton key={link.label} href={link.href} ariaLabel={link.label}>
                 {link.icon}
@@ -56,14 +56,14 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative flex w-full items-center justify-center ">
+        <div className="relative flex  justify-start sm:w-[50%] justify-end md:w-[60%] lg:justify-center lg:w-[80%] ">
           <Image
             src={Groupbanner}
             alt="Dukaandar platform preview on laptop, tablet, and phone"
             width={1125}
             height={499}
             priority
-            className="mt-3 h-auto w-full max-w-[900px]  scale-[1.3] mt-22 mr-65  "
+            className="mt-3 h-auto w-[70%] max-w-[900px]  scale-[1.6] mt-39 mr-50  "
           />
         </div>
       </div>

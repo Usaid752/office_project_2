@@ -61,9 +61,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-background transition-shadow w-[80%] mx-auto`}
+      className={`sticky top-0 z-50 bg-background transition-shadow w-[100%] mx-auto`}
     >
-      <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 py-12 lg:px-10">
+      <nav className="mx-auto flex items-center justify-between  px-4 sm:px-6 py-12 sm:py-6   lg:px-50">
         <Image
           src="/img/Group_4.svg"
           alt="logo"

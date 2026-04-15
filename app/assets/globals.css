@@ -1,3 +1,6 @@
+/* global.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @import "tailwindcss";
 .layout{
   margin: 0 auto;
@@ -23,6 +26,7 @@
   --breakpoint-xs: 30rem;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
+  --font-custom: "Visby-CF";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -57,4 +61,10 @@ body {
   width:256px;
   padding: 10.67px;
   left: 26.67px;
+} */
+
+/* @theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-visby-cf: "Visby CF", sans-serif;
+
 } */

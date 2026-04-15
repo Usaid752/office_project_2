@@ -13,11 +13,13 @@ function BlogPostCard({
   title,
   excerpt,
   imageUrl,
-  href = "#",
+  href = "/blogs/details",
 }: BlogPostCardItem) {
+  const blogDetailsHref = href === "#" ? "/blogs/details" : href;
+
   return (
     <article className="group overflow-hidden  ">
-      <Link href={href} className="block w-[100%] mx-auto mt-8">
+      <Link href={blogDetailsHref} className="block w-[100%] mx-auto mt-8">
         <div className="relative aspect-[3/4] overflow-hidden rounded-[28px]">
           <Image
             src={imageUrl}

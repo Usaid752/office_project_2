@@ -43,23 +43,23 @@ function StepArrow({ active }: { active?: boolean }) {
 export default function HowItsWork() {
   return (
     <section className="bg-white px-6 py-16 sm:px-8 lg:px-12 lg:py-20">
-      <div className="mx-auto grid max-w-[1800px] items-stretch gap-4 lg:grid-cols-[minmax(0,410px)_minmax(0,1fr)] xl:gap-5  ">
-        <div className="relative  overflow-hidden rounded-[28px]  ">
+      <div className="mx-auto grid max-w-[1800px] items-stretch  lg:grid-cols-10   ">
+        <div className="relative  overflow-hidden w-[450px]  rounded-[28px] ml-52 lg:col-span-4  ">
           <Image
             src="/img/shop_1.jpg"
             alt="Dukaandar storefront preview on a laptop with shopping bags around it"
             fill
             sizes="w-full h-full"
-            className="object-cover scale-[1.1]   "
+            className="object-cover w-full h-full "
           />
         </div>
 
-        <div className="rounded-[32px] bg-black px-6 py-8 text-white sm:px-10 sm:py-10 lg:px-12 lg:py-11">
+        <div className="rounded-[32px] w-[850px]   bg-black px-6 py-8 text-white sm:px-10 sm:py-10 lg:col-span-6 lg:px-12 lg:py-11">
           <p className="text-[20px] font-[130] uppercase  text-[#4C9A2A]  ">
             How it works
           </p>
 
-          <h2 className="mt-4  text-[100] font-[50] leading-[0.95] tracking-[-0.05em]  lg:text-[80px] ">
+          <h2 className="mt-4  text-[100] font-[50] leading-[0.95] tracking-[-0.05em]  lg:text-[75px] font-custom ">
             From Bazaar to Browser in 3 Simple Steps
           </h2>
 
@@ -78,6 +78,7 @@ export default function HowItsWork() {
           </div>
         </div>
       </div>
+    
     </section>
   );
 }
