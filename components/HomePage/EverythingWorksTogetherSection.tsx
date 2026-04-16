@@ -1,16 +1,21 @@
+ "use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import Button from "@/components/Ui/Button";
 import LearnMoreButton from "@/components/Ui/LearnMoreButton";
 import SubmitWaitlistButton from "@/components/Ui/SubmitWaitlistButton";
 
 const tabs = [
-  { label: "Admin Panel", active: true },
-  { label: "Point of Sale", active: false },
-  { label: "Store Front", active: false },
-  { label: "Mobile Responsive", active: false },
+  { label: "Admin Panel" },
+  { label: "Point of Sale" },
+  { label: "Store Front" },
+  { label: "Mobile Responsive" },
 ] as const;
 
 export default function EverythingWorksTogetherSection() {
+  const [activeTab, setActiveTab] = useState<string>(tabs[0].label);
+
   return (
     <section className="bg-white px-6 pb-16 pt-20 text-[#111111] sm:px-8 sm:pb-20 lg:px-12 lg:pt-28">
       <div className="mx-auto max-w-[1599]">
@@ -21,12 +26,13 @@ export default function EverythingWorksTogetherSection() {
             <span className="text-[#4C9A2A] font-custom">Everything Works Together</span>
           </h2>
 
-          <div className="mt-9 flex justify-center mt-12">
-            <div className="inline-flex flex-wrap items-center justify-center gap-2 rounded-2xl bg-[#F2F2F2] p-2  scale-[1.2]">
+          <div className="mt-12 flex justify-center">
+            <div className="inline-flex max-w-[320px] flex-wrap items-center justify-center gap-2 rounded-2xl bg-[#F2F2F2] p-2 scale-[0.95] sm:max-w-none sm:scale-[1.05] min-[1024px]:scale-[1.2]">
               {tabs.map((tab) => (
                 <Button
                   key={tab.label}
-                  variant={tab.active ? "tabActive" : "tabInactive"}
+                  variant={activeTab === tab.label ? "tabActive" : "tabInactive"}
+                  onClick={() => setActiveTab(tab.label)}
                 >
                   {tab.label}
                 </Button>
@@ -48,7 +54,7 @@ export default function EverythingWorksTogetherSection() {
               how much profit you&apos;ve made.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center justify-center  gap-2 lg:justify-start mt-10 scale-[1.2] ">
+            <div className="mt-10 flex max-w-[320px] flex-wrap items-center justify-center gap-2 scale-[0.95] sm:max-w-none sm:scale-[1.05] min-[1024px]:scale-[1.2] lg:justify-start">
               <SubmitWaitlistButton />
               <LearnMoreButton />
             </div>
@@ -59,7 +65,7 @@ export default function EverythingWorksTogetherSection() {
 
             <div className="relative mx-auto w-full max-w-[780px]">
               
-              <div className=" w-[80%] sm:p-3 scale-[1.2] mt-10 ml-40">
+              <div className="mt-10 mx-auto w-[70%] scale-[1.05] sm:w-[75%] sm:p-3 min-[1024px]:ml-40 min-[1024px]:w-[80%] min-[1024px]:scale-[1.2]">
                 <Image
                   src="/img/feature.svg"
                   alt="Business dashboard interface preview"

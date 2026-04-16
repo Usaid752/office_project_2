@@ -25,26 +25,28 @@ function FeatureCard({ title, description, href, imageUrl }: FeatureItem) {
 export default function Features() {
   return (
     <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <div className="mx-auto max-w-[1300px] rounded-[32px] bg-[#4C9A2A] px-6 py-8 text-white sm:px-8 sm:py-10 lg:px-12 lg:py-14 xl:px-14">
+      <div className="mx-auto max-w-[360px] rounded-[32px] bg-[#4C9A2A] px-5 py-7 text-white sm:max-w-[700px] sm:px-8 sm:py-10 lg:max-w-[1300px] lg:px-12 lg:py-14 xl:px-14">
         <div className="grid gap-8 lg:grid-cols-[140px_minmax(0,1.45fr)_minmax(0,0.9fr)] lg:items-start xl:gap-12">
-          <p className="text-[20px] font-[25] uppercase leading-5 tracking-[0.08em] text-[#A4DE02] font-custom ">
+          <p className="text-[16px] font-[25] uppercase leading-5 tracking-[0.08em] text-[#A4DE02] font-custom sm:text-[18px] lg:text-[20px]">
             Our
             <br />
             Features
           </p>
 
-          <h2 className="max-w-[16ch] text-6xl font-semibold leading-[0.98] tracking-[-0.05em]  ml-15 font-custom ">
+          <h2 className="max-w-[16ch] text-3xl font-semibold leading-[0.98] tracking-[-0.05em] font-custom sm:text-5xl lg:ml-15 lg:text-6xl">
             Powerful Features Built for the Modern Dukaandar
           </h2>
 
-          <p className="max-w-[35ch] text-sm leading-6 text-white/85 sm:text-[16px] ml-25 mb-10 font-custom ">
+          <p className="mb-8 max-w-[32ch] text-xs leading-5 text-white/85 font-custom sm:text-[15px] sm:leading-6 lg:mb-10 lg:ml-25 lg:max-w-[35ch] lg:text-[16px]">
           We’ve combined cutting-edge technology with the simplicity your business needs. Dukaandar bridges the gap between digital storefronts and physical operations, giving you the total control required to turn your local shop into a world-class brand with just a few clicks.
           </p>
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-12 xl:grid-cols-3 xl:gap-5">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} {...feature} />
+          {features.map((feature, index) => (
+            <div key={feature.title} className={index > 2 ? "hidden lg:block" : ""}>
+              <FeatureCard {...feature} />
+            </div>
           ))}
         </div>
       </div>

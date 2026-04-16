@@ -26,8 +26,8 @@ function FaqCard({ question, answer, defaultOpen }: FaqItem) {
 
 export default function FaqSection() {
   return (
-    <section className="bg-white px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-      <div className="mx-auto max-w-[1920px] px-10">
+    <section className="bg-white px-4 pt-2 pb-14 sm:px-6 lg:px-8 lg:py-20">
+      <div className="mx-auto h-[700px] w-[340px] max-w-[1920px] px-4 sm:w-[80%] sm:px-10 lg:w-[80%]">
         <header className="mx-auto max-w-[760px] text-center">
           <p className="text-[22px] font-bold  tracking-[0.12em] text-[#4C9A2A]">
             FAQ
@@ -42,8 +42,10 @@ export default function FaqSection() {
         </header>
 
         <div className="mt-10 grid gap-4 md:grid-cols-2 md:gap-5 lg:mt-12">
-          {faqs.map((faq) => (
-            <FaqCard key={faq.question} {...faq} />
+          {faqs.map((faq, index) => (
+            <div key={faq.question} className={index > 3 ? "hidden lg:block" : ""}>
+              <FaqCard {...faq} />
+            </div>
           ))}
         </div>
       </div>

@@ -26,7 +26,17 @@
   --breakpoint-xs: 30rem;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
-  --font-custom: "Visby-CF";
+  --font-custom: "Visby CF,sans-serif";
+  --font-custom-2: "Poppins,sans-serif";
+  --font-custom-3: "Roboto,sans-serif";
+  --font-custom-4: "Inter,sans-serif";
+  --font-custom-5: "Manrope,sans-serif";
+  --font-custom-6: "Space Grotesk,sans-serif";
+  --font-custom-7: "Work Sans,sans-serif";
+  --font-custom-8: "DM Sans,sans-serif";
+  --font-custom-9: "DM Serif Display,sans-serif";
+  --font-custom-10: "DM Serif Text,sans-serif";
+  --font-custom-11: "DM Mono,sans-serif";
 }
 
 @media (prefers-color-scheme: dark) {

@@ -9,15 +9,17 @@ import FaqSection from "@/app/_components/FaqSection";
 
 export default function HomePage() {
   return (
-    <main className="mx-auto w-[100%]">
+    <main className="mx-auto w-[100%] ">
       <HeroSection />
       <WhyDukaandarSection />
       <HowItsWork />
-      <Features />
-      <WhyChooseUs />
-      <FaqSection />
-      <DigitalEmpireSection />
-      <NewsHighlightsSection />
+       <Features />
+       <WhyChooseUs />
+       <FaqSection />
+        <DigitalEmpireSection />
+       <NewsHighlightsSection /> 
+      
+      
     </main>
   );
 }

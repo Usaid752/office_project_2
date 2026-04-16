@@ -96,13 +96,13 @@ export default function WhyDukaandarSection() {
         <div className="mx-auto max-w-[1600px] px-6 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
           <div className="grid gap-10 lg:grid-cols-[150px_minmax(0,430px)_minmax(0,1fr)] lg:items-start xl:gap-16">
             <div className="flex flex-col gap-8  ">
-              <p className="text-[25px] font-[55]  uppercase leading-[1.15] tracking-[-0.02em] text-[#4C9A2A] mb-10 lg:ml-10 font-custom ">
+              <p className="mb-10 text-center text-[25px] font-[55] uppercase leading-[1.15] tracking-[-0.02em] text-[#4C9A2A] lg:ml-10 lg:text-left font-custom ">
                 Why
                 <br />
                 Dukaandar?
               </p>
 
-              <div className="relative w-full max-w-[270px] overflow-hidden rounded-[15px] sm:max-w-[200%] mt-55 ml-17 scale-[1.5] mr-20 lg:mr-0 ">
+              <div className="hidden relative w-full max-w-[270px] overflow-hidden rounded-[15px] sm:max-w-[200%] mt-55 ml-17 scale-[1.5] mr-20 lg:mr-0 lg:block">
                 <Image
                   src={FeatureImage}
                   alt="A shopper browsing an online store"
@@ -118,18 +118,18 @@ export default function WhyDukaandarSection() {
               </div>
             </div>
 
-            <div className="ml-30  ">
-              <h2 className="font-[550] text-[3rem]  leading-[1.02]  ml-10 mt-10 w-[500px] font-custom ">
+            <div className="text-center lg:ml-30 lg:text-left">
+              <h2 className="mt-10 w-full text-[3rem] font-[550] leading-[1.02] font-custom lg:ml-10 lg:w-[500px]">
                 Built for Modern Merchants
               </h2>
 
-              <p className="mt-10 text-[17px] text-[#575757] ml-10  leading-[1.5] tracking-[-0.02em] w-[320px] font-custom ">
+              <p className="mt-10 mx-auto w-full max-w-[280px] text-[17px] leading-[1.5] tracking-[-0.02em] text-[#575757] font-custom lg:ml-10 lg:mx-0 lg:max-w-none lg:w-[320px]">
                 Whether you&apos;re selling fashion, electronics, groceries, or
                 handmade products - Dukaandar gives you everything you need in
                 one powerful platform.
               </p>
 
-              <ul className="mt-7 space-y-3 text-sm font-medium sm:text-[15px] ml-10 text-[#575757] font-custom ">
+              <ul className="mt-7 mx-auto w-fit space-y-3 text-left text-sm font-medium text-[#575757] font-custom sm:text-[15px] lg:ml-10 lg:mx-0">
                 {featureItems.map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <CheckIcon />
@@ -138,17 +138,17 @@ export default function WhyDukaandarSection() {
                 ))}
               </ul>
 
-              <SubmitWaitlistButton className="mt-15 ml-10 scale-[1.2]" />
+              <SubmitWaitlistButton className="mt-15 mx-auto scale-[1.2] lg:ml-10 lg:mx-0" />
             </div>
 
-            <div className="relative mx-auto mt-15 w-full max-w-[460px] lg:pt-14 xl:w-[450px]">
-              <div className="aspect-[1.06] overflow-hidden rounded-[2px] sm:rounded-[50px] scale-[1.2] pl-10 h-[350px] w-[510px] mt-15">
+            <div className="relative mx-auto  w-full max-w-[310px] lg:max-w-[460px] lg:pt-14 xl:w-[450px]">
+              <div className="mx-auto mt-15 h-[350px] w-[310px] overflow-hidden rounded-[2px] sm:rounded-[50px] lg:w-[510px] lg:scale-[1.2] lg:pl-10">
                 <Image
                   src="/img/Image.svg"
                   alt="Modern clothing store interior"
                   width={512}
                   height={467}
-                  className="h-full w-full  "
+                  className="h-full w-full"
                 />
               </div>
 

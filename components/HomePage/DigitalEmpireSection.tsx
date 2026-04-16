@@ -4,10 +4,10 @@ import { SubmitWaitButton } from "@/components/Ui/SubmitWaitButton";
 
 export default function DigitalEmpireSection() {
   return (
-    <section className="bg-white  sm:px-6 sm:py-1 lg:px-8 lg:py-2">
-      <div className="mx-auto max-w-[1800px] space-y-10 lg:space-y-16">
+    <section className="bg-white px-4 sm:px-6 sm:py-1 lg:px-8 lg:py-2">
+      <div className="mx-auto max-w-[340px] space-y-10 sm:max-w-[700px] lg:max-w-[1800px] lg:space-y-16">
         <article className="grid items-center gap-6 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]">
-          <div className="pr-15 ml-42 pb-15  mb-10 scale-[1.1]">
+          <div className="hidden pr-15 pb-15 lg:mb-10 lg:ml-42 lg:block lg:scale-[1.1]">
             <Image
               src="/img/image_2.svg"
               alt="Dukaandar storefront and dashboard preview"
@@ -19,7 +19,7 @@ export default function DigitalEmpireSection() {
             />
           </div>
 
-          <div className="rounded-[32px] w-[700px]  bg-black px-6 py-8 text-white sm:px-8 sm:py-10 lg:px-10 scale-[1.3] mr-20">
+          <div className="w-full rounded-[32px] bg-black px-6 py-8 text-white sm:px-8 sm:py-10 lg:mr-20 lg:w-[700px] lg:px-10 lg:scale-[1.3]">
             <p className="max-w-[25ch] text-4xl font-semibold  tracking-[-0.04em] sm:text-4xl lg:text-[52px] lg:leading-[0.95] font-custom ">
               Let&apos;s Build Your{" "}
               <span className="text-[#76BA1B]">Digital Empire!</span>
@@ -35,8 +35,8 @@ export default function DigitalEmpireSection() {
           </div>
         </article>
 
-        <article className="grid items-center gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-12 mb-25">
-          <div className="rounded-[32px] p-3  sm:p-4 mr-10 ">
+        <article className="mb-25 grid items-center gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-12">
+          <div className="hidden rounded-[32px] sm:p-4 lg:mb-35 lg:ml-50 lg:block lg:w-[750px]">
             <Image
               src="/img/Frame_1.svg"
               alt="Dukaandar operating system dashboard"
@@ -47,12 +47,12 @@ export default function DigitalEmpireSection() {
             />
           </div>
 
-          <div className="ml-10 pb-10">
-            <p className="text-1xl font-bold uppercase tracking-[0.12em] text-[#4C9A2A]  ">
+          <div className="h-auto w-full lg:h-[650px] lg:w-[500px]">
+            <p className="text-1xl font-bold uppercase tracking-[0.12em] text-[#4C9A2A]  font-custom ">
               The Operating System
             </p>
 
-            <h2 className="mt-3 text-5xl  font-[550] leading-[1] tracking-[-0.05em] text-[#000000] ">
+            <h2 className="mt-3 text-5xl  font-[550] leading-[1] tracking-[-0.05em] text-[#000000] font-custom ">
               Effortless Management for the Modern Seller
             </h2>
 
@@ -64,10 +64,10 @@ export default function DigitalEmpireSection() {
                   </span>
 
                   <div>
-                    <h3 className="text-xl font-semibold leading-tight text-[#111111]">
+                    <h3 className="text-xl font-semibold leading-tight text-[#111111] font-custom ">
                       {feature.title}
                     </h3>
-                    <p className="mt-2 text-medium leading-6 text-[#666666] ">
+                    <p className="mt-2 text-medium leading-6 text-[#666666] font-custom ">
                       {feature.description}
                     </p>
                   </div>

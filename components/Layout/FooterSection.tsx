@@ -49,12 +49,12 @@ function ScrollTopIcon() {
 
 export default function FooterSection() {
   return (
-    <footer className="my-16 rounded-[32px] max-w-[1797px] mx-auto bg-black px-6 py-8 text-white sm:px-10 sm:py-10 lg:my-24 lg:px-14 lg:py-12">
+    <footer className="mx-auto  my-10 w-[340px] rounded-[28px] bg-black px-5 py-6 text-white sm:w-auto sm:px-10 sm:py-10 lg:my-24 lg:max-w-[1797px] lg:rounded-[32px] lg:px-14 lg:py-12">
       <div className="relative">
         <Link
-          href="#"
+          href="/"
           aria-label="Back to top"
-          className="absolute right-0 top-0 inline-flex h-15 w-15 items-center justify-center rounded-xl bg-[#4C9A2A] text-white transition-transform hover:-translate-y-0.5 "
+          className="absolute right-0 top-0 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-[#4C9A2A] text-white transition-transform hover:-translate-y-0.5 sm:h-15 sm:w-15"
         >
           <ScrollTopIcon />
         </Link>
@@ -64,23 +64,23 @@ export default function FooterSection() {
           alt="Dukaandar"
           width={271}
           height={53}
-          className="mx-auto h-auto w-[170px] sm:w-[210px] lg:w-[271px]"
+          className="mx-auto h-auto w-[140px] sm:w-[210px] lg:w-[271px]"
         />
 
-        <h2 className="mx-auto mt-10 max-w-[1085px] text-center text-2xl font-Demibold leading-tight tracking-[-0.03em] text-white sm:text-4xl lg:text-[52px]">
+        <h2 className="mx-auto mt-8 max-w-[280px] text-center text-xl font-Demibold leading-tight tracking-[-0.03em] text-white sm:max-w-[1085px] sm:text-4xl lg:mt-10 lg:text-[52px]">
           The Platform for Next Generation of Brands.
         </h2>
       </div>
 
-      <hr className="my-10 border-white/15 lg:my-14" />
+      <hr className="my-8 border-white/15 lg:my-14" />
 
-      <section className="grid gap-10 lg:grid-cols-[minmax(0,1.3fr)_repeat(3,minmax(0,1fr))] lg:gap-12">
-        <form className="max-w-sm">
-          <h3 className="text-[28px] font-semibold leading-tight">Grow Your Business Faster</h3>
-          <p className="mt-3 text-[1rem] leading-6 text-white/60">
+      <section className="grid gap-8 lg:grid-cols-[minmax(0,1.3fr)_repeat(3,minmax(0,1fr))] lg:gap-12">
+        <form className="max-w-[290px] sm:max-w-sm">
+          <h3 className="text-[22px] font-semibold leading-tight sm:text-[28px]">Grow Your Business Faster</h3>
+          <p className="mt-3 text-[0.9rem] leading-5 text-white/60 sm:text-[1rem] sm:leading-6">
             Join 10,000+ smart merchants. Get the latest selling tips and marketing hacks delivered to your inbox every week.
           </p>
-          <label className="mt-6 flex items-center rounded-xl bg-white p-1 max-w-[475px]">
+          <label className="mt-5 flex max-w-[290px] items-center rounded-xl bg-white p-1 sm:mt-6 sm:max-w-[475px]">
             <span className="sr-only">Email address</span>
             <input
               type="email"
@@ -98,8 +98,8 @@ export default function FooterSection() {
         </form>
 
         <nav aria-label="Footer menu">
-          <h3 className="text-2xl font-Demibold leading-tight max-w-[160px] pl-22">Menu</h3>
-          <ul className="mt-5 space-y-3 text-[#D4D4D4] pl-22">
+          <h3 className="max-w-[160px] text-lg font-Demibold leading-tight sm:text-2xl lg:pl-22">Menu</h3>
+          <ul className="mt-4 space-y-2 text-[#D4D4D4] sm:mt-5 sm:space-y-3 lg:pl-22">
             {menuLinks.map((link) => (
               <li key={link.label}>
                 <Link
@@ -119,10 +119,10 @@ export default function FooterSection() {
         </nav>
 
         <section aria-labelledby="footer-services">
-          <h3 id="footer-services" className="text-2xl font-Demibold leading-tight pr-40">
+          <h3 id="footer-services" className="text-lg font-Demibold leading-tight sm:text-2xl lg:pr-40">
             Services
           </h3>
-          <ul className="mt-5 space-y-3 text-sm text-[#D4D4D4] pr-10">
+          <ul className="mt-4 space-y-2 text-xs text-[#D4D4D4] sm:mt-5 sm:space-y-3 sm:text-sm lg:pr-10">
             {serviceLinks.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -130,10 +130,10 @@ export default function FooterSection() {
         </section>
 
         <section aria-labelledby="footer-contact">
-          <h3 id="footer-contact" className="text-2xl font-Demibold leading-tight">
+          <h3 id="footer-contact" className="text-lg font-Demibold leading-tight sm:text-2xl">
             Contact Us
           </h3>
-          <address className="mt-5 max-w-[236px]  text-[1.225rem] not-italic text-[#D4D4D4] ">
+          <address className="mt-4 max-w-[220px] text-[0.95rem] not-italic text-[#D4D4D4] sm:mt-5 sm:max-w-[236px] sm:text-[1.225rem]">
             <p>254 Chapman Rd, Ste 208 #21645, Newark, Delaware 19702, US</p>
             <a href="tel:+13023664887" className="block transition-colors hover:text-white pt-2">
               +1 302 366 4887
@@ -143,14 +143,14 @@ export default function FooterSection() {
             </a>
           </address>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3">
+          <div className="mt-5 flex flex-wrap items-center gap-3 sm:mt-6">
             {socialLinks.map(({ label, href, icon, filled }) => (
               <a
                 key={label}
                 href={href}
                 aria-label={label}
                 className={[
-                  "inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg [&_svg]:h-5 [&_svg]:w-5 [&_svg]:shrink-0 [&_svg_path]:fill-white",
+                  "inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg [&_svg]:h-4 [&_svg]:w-4 [&_svg]:shrink-0 [&_svg_path]:fill-white sm:h-10 sm:w-10 sm:[&_svg]:h-5 sm:[&_svg]:w-5",
                   filled ? "bg-[#4C9A2A]" : "hover:bg-white/10",
                 ].join(" ")}
               >
@@ -163,7 +163,7 @@ export default function FooterSection() {
 
       <hr className="my-8 border-white/15 lg:my-10" />
 
-      <p className="text-center text-sm text-[#979797]">
+      <p className="text-center text-xs text-[#979797] sm:text-sm">
         Copyright © 2025 Rometheme. All Rights Reserved.
       </p>
     </footer>

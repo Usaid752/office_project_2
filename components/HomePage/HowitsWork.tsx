@@ -54,7 +54,7 @@ export default function HowItsWork() {
           />
         </div>
 
-        <div className="rounded-[32px] w-[850px]   bg-black px-6 py-8 text-white sm:px-10 sm:py-10 lg:col-span-6 lg:px-12 lg:py-11">
+        <div className="w-[330px] rounded-[32px] bg-black px-6 py-8 text-white sm:px-10 sm:py-10 min-[1024px]:w-[850px] lg:col-span-6 lg:px-12 lg:py-11">
           <p className="text-[20px] font-[130] uppercase  text-[#4C9A2A]  ">
             How it works
           </p>

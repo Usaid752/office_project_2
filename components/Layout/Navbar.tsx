@@ -63,16 +63,16 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 bg-background transition-shadow w-[100%] mx-auto`}
     >
-      <nav className="mx-auto flex items-center justify-between  px-4 sm:px-6 py-12 sm:py-6   lg:px-50">
+      <nav className="mx-auto flex w-full items-center justify-between px-4 py-12 sm:px-6 sm:py-6 max-[1199px]:pl-10 min-[1200px]:w-[80%] min-[1200px]:px-50">
         <Image
           src="/img/Group_4.svg"
           alt="logo"
           width={271}
           height={53}
-          className="w-[160px] sm:w-[200px] lg:w-[271px] h-auto"
+          className="h-auto w-[160px] sm:w-[200px] min-[1200px]:w-[271px]"
         />
 
-        <ul className="hidden lg:flex items-center gap-8">
+        <ul className="hidden items-center gap-8 min-[1200px]:flex">
           {navLinks.map((link) => (
             <li
               key={link.href}
@@ -99,7 +99,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden items-center gap-3 min-[1200px]:flex">
           <Button
             variant="outlined"
             href="/contact"
@@ -122,7 +122,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="lg:hidden p-2 -mr-2"
+          className="-mr-2 p-2 min-[1200px]:hidden"
           onClick={() => setMobileOpen((value) => !value)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -131,7 +131,7 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`lg:hidden overflow-hidden transition-[max-height] duration-300 ease-in-out ${
+        className={`overflow-hidden transition-[max-height] duration-300 ease-in-out min-[1200px]:hidden ${
           mobileOpen ? "max-h-[500px]" : "max-h-0"
         }`}
       >
