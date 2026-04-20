@@ -9,11 +9,11 @@ export default function NewsHighlightsSection() {
       <div className=" relative w-full h-full flex flex-col justify-top">
         <div className="flex flex-col  lg:flex-row lg:items-start lg:justify-between">
           <div className="grid  max-w-[1600px] max-h-[140px]  lg:grid-cols-[180px_minmax(0,1fr)]  ">
-            <p className="ml-0 text-[18px] font-bold uppercase tracking-[0.08em] text-[#76BA1B] sm:text-base lg:ml-5 lg:text-[25px]">
+            <p className="ml-0 text-[18px] font-bold uppercase tracking-[0.08em] text-(--text-color-senary) sm:text-base lg:ml-5 lg:text-[25px]">
               News & Article
             </p>
 
-            <h2 className="max-h-[140px] max-w-[320px] pb-5 text-center font-Demibold text-[28px] leading-[0.95] tracking-[-0.05em] text-[#000000] sm:max-w-[500px] sm:text-[36px] lg:max-w-[797px] lg:pb-20 lg:pl-45 lg:text-start lg:text-[50px] lg:scale-[1.3]">
+            <h2 className="max-h-[140px] max-w-[320px] pb-5 text-center font-Demibold text-[28px] leading-[0.95] tracking-[-0.05em] text-(--text-color-primary) sm:max-w-[500px] sm:text-[36px] lg:max-w-[797px] lg:pb-20 lg:pl-45 lg:text-start lg:text-[50px] lg:scale-[1.3]">
               Industry News & Company Highlights
             </h2>
 
@@ -24,7 +24,7 @@ export default function NewsHighlightsSection() {
             href="#"
             variant="filled"
             icon={<ArrowIcon className="text-black" />}
-            iconClassName="!h-8 !w-8 !rounded-[10px] !bg-[#76BA1B]"
+            iconClassName="!h-8 !w-8 !rounded-[10px] !bg-(--text-color-senary)"
             className="mr-0 w-fit !btn-rounded-md !bg-black px-4 py-2 text-xs font-medium !text-white hover:!bg-black/90 sm:text-sm min-[1024px]:mr-1 min-[1024px]:px-5"
           >
             Read More
@@ -36,9 +36,13 @@ export default function NewsHighlightsSection() {
           {newsHighlights.map((item, index) => (
             <div key={item.title} className={index > 1 ? "hidden min-[1024px]:block" : ""}>
               <NewsHighlightCard {...item} />
+              
             </div>
+            
           ))}
         </div>
+        
+
       </div>
     </section>
   );

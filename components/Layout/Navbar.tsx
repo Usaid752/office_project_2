@@ -61,18 +61,20 @@ export default function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-background transition-shadow w-[100%] mx-auto`}
+      className={`sticky top-0 z-50 w-full xs:w-[20rem] sm:w-[350px] md:w-[80%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%] bg-background/95 backdrop-blur transition-shadow supports-[backdrop-filter]:bg-background/80 ${
+        hasScrolled ? "shadow-sm" : ""
+      }`}
     >
-      <nav className="mx-auto flex w-full items-center justify-between px-4 py-12 sm:px-6 sm:py-6 max-[1199px]:pl-10 min-[1200px]:w-[80%] min-[1200px]:px-50">
+      <nav className="mx-auto flex w-full max-w-screen-2xl items-center justify-between px-4 py-5 sm:px-6 md:px-8 lg:px-10 lg:py-6 xl:px-12 2xl:px-16 max-[500px]:px-3 max-[500px]:py-3">
         <Image
           src="/img/Group_4.svg"
           alt="logo"
           width={271}
           height={53}
-          className="h-auto w-[160px] sm:w-[200px] min-[1200px]:w-[271px]"
+          className="h-auto w-[140px] sm:w-[180px] md:w-[200px] lg:w-[230px] xl:w-[250px] 2xl:w-[271px] max-[500px]:w-[118px]"
         />
 
-        <ul className="hidden items-center gap-8 min-[1200px]:flex">
+        <ul className="hidden items-center gap-5 xl:gap-8 lg:flex">
           {navLinks.map((link) => (
             <li
               key={link.href}
@@ -80,7 +82,7 @@ export default function Navbar() {
             >
               <Link
                 href={link.href}
-                className={`text-sm transition-colors hover:text-foreground ${
+                className={`text-[13px] xl:text-sm transition-colors hover:text-foreground ${
                   isActive(link.href)
                     ? "font-bold text-foreground"
                     : "font-medium text-neutral-500"
@@ -99,7 +101,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 min-[1200px]:flex">
+        <div className="hidden items-center gap-2 xl:gap-3 lg:flex">
           <Button
             variant="outlined"
             href="/contact"
@@ -122,7 +124,7 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="-mr-2 p-2 min-[1200px]:hidden"
+          className="-mr-2 p-2 lg:hidden max-[500px]:mr-0 max-[500px]:p-1.5"
           onClick={() => setMobileOpen((value) => !value)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -131,18 +133,18 @@ export default function Navbar() {
       </nav>
 
       <div
-        className={`overflow-hidden transition-[max-height] duration-300 ease-in-out min-[1200px]:hidden ${
-          mobileOpen ? "max-h-[500px]" : "max-h-0"
+        className={`overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden ${
+          mobileOpen ? "max-h-[560px]" : "max-h-0"
         }`}
       >
-        <div className="border-t border-border px-4 sm:px-6 pb-6 pt-4">
-          <ul className="flex flex-col gap-3 sm:gap-4">
+        <div className="border-t border-border px-4 pb-6 pt-4 sm:px-6 max-[500px]:px-3 max-[500px]:pb-4 max-[500px]:pt-3">
+          <ul className="flex flex-col gap-3 sm:gap-4 max-[500px]:gap-2">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`block text-base transition-colors hover:text-foreground ${
+                  className={`block text-base transition-colors hover:text-foreground max-[500px]:text-sm ${
                     isActive(link.href)
                       ? "font-bold text-foreground"
                       : "font-medium text-neutral-500"
@@ -154,12 +156,12 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="mt-6 flex flex-col gap-3">
+          <div className="mt-6 flex flex-col gap-3 max-[500px]:mt-4 max-[500px]:gap-2">
             <Button
               variant="outlined"
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className={`justify-center btn-rounded-md ${
+              className={`justify-center btn-rounded-md max-[500px]:h-10 max-[500px]:text-sm ${
                 isActive("/contact") ? "border-foreground" : ""
               }`}
             >
@@ -172,7 +174,7 @@ export default function Navbar() {
               icon={
                 <ArrowIcon/>
               }
-              className={`w-full justify-between gap-10 ${
+              className={`w-full justify-between gap-10 max-[500px]:h-10 max-[500px]:gap-4 max-[500px]:text-sm ${
                 isActive("/signup") ? "bg-primary-dark text-white" : ""
               }`}
             >

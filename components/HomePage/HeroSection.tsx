@@ -25,12 +25,12 @@ export default function HeroSection() {
             Build. Sell. Grow with Dukaandar.
           </p>
 
-          <h1 className="mb-5 text-xl font-[700] text-foreground sm:text-[1.5rem] md:text-[4.5rem] min-[1101px]:text-[5rem] min-[1101px]:leading-[1] tracking-tight font-custom ">
+          <h1 className="mb-5 text-xl font-bold text-foreground sm:text-[1.5rem] md:text-[4.5rem] min-[1101px]:text-[5rem] min-[1101px]:leading-[1] tracking-tight">
             Powering the
             <br />
-            Future of <span className="text-[#4C9A2A] font-custom">Online</span>
+            Future of <span className="text-(--text-color-secondary) ">Online</span>
             <br />
-            <span className="text-[#4C9A2A] font-custom">Commerce</span>
+            <span className="text-(--text-color-secondary) ">Commerce</span>
           </h1>
 
           <p className="mb-8 max-w-[430px] text-sm leading-relaxed text-black/65 sm:text-base min-[1101px]:text-[1.1rem] font-light font-custom ">

@@ -22,7 +22,7 @@ export default function DigitalEmpireSection() {
           <div className="w-full rounded-[32px] bg-black px-6 py-8 text-white sm:px-8 sm:py-10 lg:mr-20 lg:w-[700px] lg:px-10 lg:scale-[1.3]">
             <p className="max-w-[25ch] text-4xl font-semibold  tracking-[-0.04em] sm:text-4xl lg:text-[52px] lg:leading-[0.95] font-custom ">
               Let&apos;s Build Your{" "}
-              <span className="text-[#76BA1B]">Digital Empire!</span>
+              <span className="text-(--text-color-senary)">Digital Empire!</span>
             </p>
 
             <p className="mt-5  text-[17px] leading-6 text-white/70  max-w-[500px] ">
@@ -48,18 +48,18 @@ export default function DigitalEmpireSection() {
           </div>
 
           <div className="h-auto w-full lg:h-[650px] lg:w-[500px]">
-            <p className="text-1xl font-bold uppercase tracking-[0.12em] text-[#4C9A2A]  font-custom ">
+            <p className="text-1xl font-bold uppercase tracking-[0.12em] text-(--text-color-secondary)  font-custom ">
               The Operating System
             </p>
 
-            <h2 className="mt-3 text-5xl  font-[550] leading-[1] tracking-[-0.05em] text-[#000000] font-custom ">
+            <h2 className="mt-3 text-5xl  font-[550] leading-[1] tracking-[-0.05em] text-(--text-color-primary) font-custom ">
               Effortless Management for the Modern Seller
             </h2>
 
             <ul className="mt-8 space-y-5">
               {managementFeatures.map((feature) => (
                 <li key={feature.number} className="flex items-start gap-4">
-                  <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#4C9A2A] text-sm font-semibold text-white">
+                  <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-(--text-color-secondary) text-sm font-semibold text-white">
                     {feature.number}
                   </span>
 

@@ -25,9 +25,9 @@ function FeatureCard({ title, description, href, imageUrl }: FeatureItem) {
 export default function Features() {
   return (
     <section className="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <div className="mx-auto max-w-[360px] rounded-[32px] bg-[#4C9A2A] px-5 py-7 text-white sm:max-w-[700px] sm:px-8 sm:py-10 lg:max-w-[1300px] lg:px-12 lg:py-14 xl:px-14">
+      <div className="mx-auto max-w-[360px] rounded-[32px] bg-(--text-color-secondary) px-5 py-7 text-white sm:max-w-[700px] sm:px-8 sm:py-10 lg:max-w-[1300px] lg:px-12 lg:py-14 xl:px-14">
         <div className="grid gap-8 lg:grid-cols-[140px_minmax(0,1.45fr)_minmax(0,0.9fr)] lg:items-start xl:gap-12">
-          <p className="text-[16px] font-[25] uppercase leading-5 tracking-[0.08em] text-[#A4DE02] font-custom sm:text-[18px] lg:text-[20px]">
+          <p className="text-[16px] font-[25] uppercase leading-5 tracking-[0.08em] text-(--text-color-tertiary) font-custom sm:text-[18px] lg:text-[20px]">
             Our
             <br />
             Features

@@ -55,7 +55,7 @@ export default function HowItsWork() {
         </div>
 
         <div className="w-[330px] rounded-[32px] bg-black px-6 py-8 text-white sm:px-10 sm:py-10 min-[1024px]:w-[850px] lg:col-span-6 lg:px-12 lg:py-11">
-          <p className="text-[20px] font-[130] uppercase  text-[#4C9A2A]  ">
+          <p className="text-[20px] font-[130] uppercase  text-(--text-color-secondary)  ">
             How it works
           </p>
 

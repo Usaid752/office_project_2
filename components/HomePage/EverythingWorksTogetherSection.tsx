@@ -23,7 +23,7 @@ export default function EverythingWorksTogetherSection() {
           <h2 className="text-4xl font-[550] leading-tight tracking-[-0.05em] sm:text-5xl lg:text-[3rem] font-custom ">
             Your Business Runs Better When
             <br />
-            <span className="text-[#4C9A2A] font-custom">Everything Works Together</span>
+            <span className="text-(--text-color-secondary) ">Everything Works Together</span>
           </h2>
 
           <div className="mt-12 flex justify-center">

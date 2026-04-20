@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
             <span className="text-[30px] text-[#8D8D88] font-medium font-weight-[500] font-custom sm:text-[36px] lg:text-[45px]">We build{" "}</span>
             <span className="text-[28px] text-[#000000] font-bold font-weight-[700] font-custom sm:text-[34px] lg:text-[40px]">high-performance, intuitive digital stores</span>
             <span className="text-[30px] text-[#8D8D88] font-weight-[500] font-custom sm:text-[36px] lg:text-[43px]">{" "}that meet the fast-paced demands of </span>
-            <span className="text-[32px] font-bold text-[#4C9A2A] font-custom sm:text-[38px] lg:text-5xl">modern ecommerce.</span>
+            <span className="text-[32px] font-bold text-(--text-color-secondary) font-custom sm:text-[38px] lg:text-5xl">modern ecommerce.</span>
           </h2>
 
           <div className="mt-8 flex items-center justify-center">
